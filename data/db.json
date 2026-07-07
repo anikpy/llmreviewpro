@@ -1365,7 +1365,7 @@
       "developer": "Kiro.dev",
       "input_cost_1m": 0,
       "output_cost_1m": 0,
-      "mmlu_score": 75.0
+      "mmlu_score": 75
     },
     {
       "id": "model-augment-core",
@@ -1381,7 +1381,7 @@
       "developer": "Anysphere",
       "input_cost_1m": 3,
       "output_cost_1m": 15,
-      "mmlu_score": 91.0
+      "mmlu_score": 91
     },
     {
       "id": "model-codeium-cascade",
@@ -1389,7 +1389,7 @@
       "developer": "Codeium",
       "input_cost_1m": 2,
       "output_cost_1m": 8,
-      "mmlu_score": 89.0
+      "mmlu_score": 89
     },
     {
       "id": "model-claude-code-agent",
@@ -1457,10 +1457,178 @@
       "session_hash": "sess_54ojgla663uu5t8djz6ygq",
       "event_type": "page_view",
       "timestamp": "2026-07-07T08:42:30.955Z"
+    },
+    {
+      "id": "log-1783414102964-jtx01",
+      "post_id": "homepage",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T08:48:22.964Z"
+    },
+    {
+      "id": "log-1783414103017-97882",
+      "post_id": "homepage",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T08:48:23.017Z"
+    },
+    {
+      "id": "log-1783414110949-jin1b",
+      "post_id": "homepage",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T08:48:30.949Z"
+    },
+    {
+      "id": "log-1783414111010-7qs33",
+      "post_id": "homepage",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T08:48:31.010Z"
+    },
+    {
+      "id": "log-1783414116047-pv39t",
+      "post_id": "google-ai-studio-gemini-playground-review",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T08:48:36.047Z"
+    },
+    {
+      "id": "log-1783414116111-w4amg",
+      "post_id": "google-ai-studio-gemini-playground-review",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "scroll_depth",
+      "timestamp": "2026-07-07T08:48:36.111Z"
+    },
+    {
+      "id": "log-1783414116113-d3efv",
+      "post_id": "google-ai-studio-gemini-playground-review",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T08:48:36.113Z"
+    },
+    {
+      "id": "log-1783414130641-5f72g",
+      "post_id": "homepage",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T08:48:50.641Z"
+    },
+    {
+      "id": "log-1783414130649-v9xhx",
+      "post_id": "homepage",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T08:48:50.649Z"
+    },
+    {
+      "id": "log-1783414235114-dvzt6",
+      "post_id": "deepseek-v4-mixture-of-experts-benchmarks",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T08:50:35.114Z"
+    },
+    {
+      "id": "log-1783414235154-mr17t",
+      "post_id": "deepseek-v4-mixture-of-experts-benchmarks",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "scroll_depth",
+      "timestamp": "2026-07-07T08:50:35.154Z"
+    },
+    {
+      "id": "log-1783414235157-cjuo7",
+      "post_id": "deepseek-v4-mixture-of-experts-benchmarks",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T08:50:35.157Z"
+    },
+    {
+      "id": "log-1783414242577-brpvh",
+      "post_id": "homepage",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T08:50:42.577Z"
+    },
+    {
+      "id": "log-1783414242641-oc8yr",
+      "post_id": "homepage",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T08:50:42.641Z"
+    },
+    {
+      "id": "log-1783414557034-63rq2",
+      "post_id": "homepage",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T08:55:57.034Z"
+    },
+    {
+      "id": "log-1783414557083-02s8j",
+      "post_id": "homepage",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T08:55:57.083Z"
+    },
+    {
+      "id": "log-1783414940548-b5j19",
+      "post_id": "homepage",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T09:02:20.548Z"
+    },
+    {
+      "id": "log-1783414940601-rb8cy",
+      "post_id": "homepage",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T09:02:20.601Z"
+    },
+    {
+      "id": "log-1783415020586-552vo",
+      "post_id": "homepage",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T09:03:40.586Z"
+    },
+    {
+      "id": "log-1783415020627-b03nb",
+      "post_id": "homepage",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T09:03:40.627Z"
+    },
+    {
+      "id": "log-1783416154602-fw2pr",
+      "post_id": "homepage",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T09:22:34.602Z"
+    },
+    {
+      "id": "log-1783416154651-tkmll",
+      "post_id": "homepage",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T09:22:34.651Z"
+    },
+    {
+      "id": "log-1783416935628-1jmxu",
+      "post_id": "homepage",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T09:35:35.628Z"
+    },
+    {
+      "id": "log-1783416935695-cl2ys",
+      "post_id": "homepage",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T09:35:35.695Z"
     }
   ],
   "adsense": {
-    "publisherId": "pub-8561729304192837",
+    "publisherId": "pub-4762804730371022",
     "enabled": true
   },
   "adminPassword": "admin"
