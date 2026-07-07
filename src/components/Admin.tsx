@@ -559,7 +559,7 @@ export default function Admin({ navigate }: AdminProps) {
             </span>
           </div>
           <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
-            Admin endpoints live. Dynamic sitemaps, ads.txt files, and robots.txt serve from workspace root.
+            Admin endpoints live. Dynamic sitemaps, Ads.txt files, and robots.txt serve from workspace root.
           </p>
         </div>
 
@@ -1463,7 +1463,7 @@ export default function Admin({ navigate }: AdminProps) {
                         <option value="/">Homepage (/) </option>
                         <option value="/robots.txt">Robots Directive (/robots.txt)</option>
                         <option value="/sitemap.xml">XML Sitemap (/sitemap.xml)</option>
-                        <option value="/ads.txt">AdSense Ads verification (/ads.txt)</option>
+                        <option value="/Ads.txt">AdSense Ads verification (/Ads.txt)</option>
                         {posts.map((post) => (
                           <option key={post.id} value={`/post/${post.slug}`}>
                             Review: {post.title.substring(0, 40)}...
@@ -1528,7 +1528,7 @@ export default function Admin({ navigate }: AdminProps) {
                           <div>
                             <span className="text-xs font-bold text-zinc-800 dark:text-zinc-200">Ads.txt Verification Compliance</span>
                             <p className="text-[11px] text-zinc-500 mt-0.5">
-                              Publisher ID is synchronized. Crawlers querying <code className="bg-zinc-100 px-1 py-0.5 rounded dark:bg-zinc-900">/ads.txt</code> will receive verified authorization credentials.
+                              Publisher ID is synchronized. Crawlers querying <code className="bg-zinc-100 px-1 py-0.5 rounded dark:bg-zinc-900">/Ads.txt</code> will receive verified authorization credentials.
                             </p>
                           </div>
                         </div>
@@ -1552,7 +1552,7 @@ export default function Admin({ navigate }: AdminProps) {
                   Google AdSense and Legal Settings
                 </h3>
                 <p className="font-sans text-xs text-zinc-500 dark:text-zinc-400 mb-6 leading-relaxed">
-                  Provide your AdSense Publisher ID to safely enable programmatic ads.txt files and display visual advertising block slots on post pages.
+                  Provide your AdSense Publisher ID to safely enable programmatic Ads.txt files and display visual advertising block slots on post pages.
                 </p>
 
                 <div className="flex flex-col gap-4 mb-6">
@@ -1568,7 +1568,7 @@ export default function Admin({ navigate }: AdminProps) {
                       className="w-full rounded-lg border border-zinc-200 bg-white px-3 py-2 text-xs text-zinc-900 focus:outline-none focus:border-emerald-500 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-50"
                     />
                     <span className="text-[10px] text-zinc-400 mt-1 block">
-                      Instantly updates <strong>/ads.txt</strong> route of the platform for Google verification crawl compliance.
+                      Instantly updates <strong>/Ads.txt</strong> route of the platform for Google verification crawl compliance.
                     </span>
                   </div>
 
@@ -1581,7 +1581,7 @@ export default function Admin({ navigate }: AdminProps) {
                       className="rounded border-zinc-300 text-emerald-600 focus:ring-emerald-500 h-3.5 w-3.5"
                     />
                     <label htmlFor="ads-enabled-box" className="font-sans text-xs font-medium text-zinc-700 dark:text-zinc-300 cursor-pointer">
-                      Enable placeholder visual ads.txt structures & inline post slots
+                      Enable placeholder visual Ads.txt structures & inline post slots
                     </label>
                   </div>
                 </div>
