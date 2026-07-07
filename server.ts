@@ -150,6 +150,7 @@ function saveDB(data: any) {
 
 async function startServer() {
   const app = express();
+  app.enable("trust proxy");
   app.use(express.json());
 
   // Dynamic Auth Cookie check helper
@@ -214,12 +215,13 @@ async function startServer() {
   // Robots.txt
   app.get("/robots.txt", (req, res) => {
     detectAndLogBot(req, "/robots.txt");
+    const domain = `${req.protocol}://${req.get("host")}`;
     res.type("text/plain");
     res.send(`User-agent: *
 Disallow: /admin/
 Allow: /
 
-Sitemap: ${process.env.APP_URL || "http://localhost:3000"}/sitemap.xml
+Sitemap: ${domain}/sitemap.xml
 `);
   });
 
@@ -239,7 +241,7 @@ Sitemap: ${process.env.APP_URL || "http://localhost:3000"}/sitemap.xml
   app.get("/sitemap.xml", (req, res) => {
     detectAndLogBot(req, "/sitemap.xml");
     const db = getDB();
-    const domain = process.env.APP_URL || "http://localhost:3000";
+    const domain = `${req.protocol}://${req.get("host")}`;
     const publishedPosts = db.posts.filter((p: any) => p.status === "published");
     
     let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
