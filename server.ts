@@ -181,7 +181,7 @@ async function startServer() {
       botName = "Baiduspider";
     } else if (userAgent.includes("bot") || userAgent.includes("crawler") || userAgent.includes("spider")) {
       botName = "Generic Crawler";
-    } else if (requestedUrl === "/robots.txt" || requestedUrl === "/sitemap.xml" || requestedUrl === "/ads.txt") {
+    } else if (requestedUrl === "/robots.txt" || requestedUrl === "/sitemap.xml" || requestedUrl.toLowerCase() === "/ads.txt") {
       botName = "SEO Validator Bot";
     }
 
@@ -225,9 +225,9 @@ Sitemap: ${domain}/sitemap.xml
 `);
   });
 
-  // Ads.txt
-  app.get("/ads.txt", (req, res) => {
-    detectAndLogBot(req, "/ads.txt");
+  // Ads.txt (Support both /ads.txt and /Ads.txt)
+  app.get(["/ads.txt", "/Ads.txt"], (req, res) => {
+    detectAndLogBot(req, req.path);
     const db = getDB();
     res.type("text/plain");
     if (db.adsense && db.adsense.publisherId && db.adsense.enabled) {
