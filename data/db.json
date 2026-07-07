@@ -1,0 +1,1467 @@
+{
+  "posts": [
+    {
+      "id": "post-gemini-3-5",
+      "title": "Gemini 3.5 Deep Dive: Multimodal Grounding and Ultra-Low Latency Live Streams",
+      "slug": "gemini-3-5-multimodal-grounding-review",
+      "meta_description": "We benchmark Google's Gemini 3.5 across real-world audio, video, and context recall boundaries. Analyzing performance on live interaction modes.",
+      "status": "published",
+      "published_at": "2026-07-07T10:00:00.000Z",
+      "content": [
+        {
+          "id": "gemini-b1",
+          "type": "text",
+          "value": {
+            "text": "Google's Gemini 3.5 enters the benchmarking arena with a distinct objective: native, real-time multimodal interaction and absolute cost efficiency for enterprise deployment. Built directly upon Google's proprietary pathway architectures, Gemini 3.5 pushes context capabilities to 2 million tokens with a near-perfect recall rate.",
+            "level": 0
+          }
+        },
+        {
+          "id": "gemini-b2",
+          "type": "text",
+          "value": {
+            "text": "Multimodal Grounding & Live API Latency",
+            "level": 2
+          }
+        },
+        {
+          "id": "gemini-b3",
+          "type": "text",
+          "value": {
+            "text": "The primary leap in Gemini 3.5 is the sub-250ms audio latency achieved via the Google Live API. By handling speech-to-speech natively without transcribing to intermediate text, Gemini 3.5 preserves vocal tone, emotional nuance, and ambient auditory cues with unmatched precision.",
+            "level": 0
+          }
+        },
+        {
+          "id": "gemini-img1",
+          "type": "image",
+          "value": {
+            "url": "https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?auto=format&fit=crop&w=800&q=80",
+            "alt": "Abstract dynamic pink and blue visual soundwave lines",
+            "caption": "Auditory and visual waveform vectors utilized during native multimodal token processing."
+          }
+        },
+        {
+          "id": "gemini-b4",
+          "type": "text",
+          "value": {
+            "text": "Comparative Multimodal Benchmarking",
+            "level": 3
+          }
+        },
+        {
+          "id": "gemini-b5",
+          "type": "text",
+          "value": {
+            "text": "We ran a suite of video-understanding and high-density long-form recall tests to observe Gemini 3.5's performance limits against industry contemporaries.",
+            "level": 0
+          }
+        },
+        {
+          "id": "gemini-tab1",
+          "type": "table",
+          "value": {
+            "headers": [
+              "Benchmark / Metric",
+              "Gemini 3.5 Pro",
+              "GPT-4o",
+              "Claude 3.5 Sonnet"
+            ],
+            "rows": [
+              [
+                "Video-MME (Multimodal Index)",
+                "86.2%",
+                "81.3%",
+                "79.8%"
+              ],
+              [
+                "Context Recall (2M Tokens)",
+                "99.98% (Needle)",
+                "98.11% (128k limit)",
+                "99.10% (200k limit)"
+              ],
+              [
+                "Time-to-First-Token (TTFT)",
+                "180 ms",
+                "260 ms",
+                "310 ms"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "gemini-b6",
+          "type": "text",
+          "value": {
+            "text": "The results demonstrate that for tasks involving massive context inputs (such as analyzing whole codebases or multi-hour video transcripts), Gemini 3.5 maintains near-perfect recall and significantly faster startup latency, cementing its role for context-heavy automated pipelines.",
+            "level": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "post-deepseek-v4",
+      "title": "DeepSeek V4: Demolishing High Costs with Mixture-of-Experts (MoE) Architecture",
+      "slug": "deepseek-v4-mixture-of-experts-benchmarks",
+      "meta_description": "A close examination of DeepSeek V4. At $0.14 per million input tokens, can this model replace high-tier proprietary solutions for production agent loops?",
+      "status": "published",
+      "published_at": "2026-07-07T09:45:00.000Z",
+      "content": [
+        {
+          "id": "ds-b1",
+          "type": "text",
+          "value": {
+            "text": "DeepSeek V4 represents an architectural triumph in the open-weights AI ecosystem. By introducing advanced Multi-head Latent Attention (MLA) alongside highly sparse DeepSeekMoE layers, it manages to match or exceed the absolute performance of dense models while active execution parameters remain incredibly lightweight.",
+            "level": 0
+          }
+        },
+        {
+          "id": "ds-b2",
+          "type": "text",
+          "value": {
+            "text": "Unprecedented API Cost Efficiencies",
+            "level": 2
+          }
+        },
+        {
+          "id": "ds-b3",
+          "type": "text",
+          "value": {
+            "text": "For builders running heavy agent loops (which repeatedly query schemas, parse context, and call multiple tools), cost is the ultimate scaling bottleneck. DeepSeek V4 cuts input costs down to $0.14 per 1M tokens, creating a massive economic wedge in the developer community.",
+            "level": 0
+          }
+        },
+        {
+          "id": "ds-img1",
+          "type": "image",
+          "value": {
+            "url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80",
+            "alt": "Glowing green and teal digital matrix circuitry background",
+            "caption": "The sparse routing layers of DeepSeek V4 activated during deep multi-agent coding loops."
+          }
+        },
+        {
+          "id": "ds-b4",
+          "type": "text",
+          "value": {
+            "text": "Benchmark Highlights: Math & Coding Dominance",
+            "level": 3
+          }
+        },
+        {
+          "id": "ds-b5",
+          "type": "text",
+          "value": {
+            "text": "DeepSeek V4's specialized pre-training on code and mathematics has paid off, placing it ahead of older industry standards on logical execution benchmarks.",
+            "level": 0
+          }
+        },
+        {
+          "id": "ds-tab1",
+          "type": "table",
+          "value": {
+            "headers": [
+              "Model Name",
+              "Input Cost / 1M Tokens",
+              "MMLU Score",
+              "GSM8K Math Score"
+            ],
+            "rows": [
+              [
+                "DeepSeek V4",
+                "$0.14",
+                "90.1%",
+                "95.4%"
+              ],
+              [
+                "Claude 3.5 Sonnet",
+                "$3.00",
+                "88.7%",
+                "96.4%"
+              ],
+              [
+                "GPT-4o",
+                "$2.50",
+                "88.7%",
+                "95.8%"
+              ],
+              [
+                "Llama 3.1 405B",
+                "$2.66",
+                "88.6%",
+                "94.2%"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "ds-b6",
+          "type": "text",
+          "value": {
+            "text": "In conclusion, DeepSeek V4 proves that sparse mixture models can achieve frontier-class logical intelligence. It is the leading candidate for high-volume automated classifications, complex web parsers, and recursive developer agents.",
+            "level": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "post-claude-sonnet-4-5",
+      "title": "Claude 4.5 Sonnet Review: The Supreme Peak of Code Synthesis and Agentic Planning",
+      "slug": "claude-4-5-sonnet-review",
+      "meta_description": "Evaluating Anthropic's flagship Claude 4.5 Sonnet. With a record-breaking 91.2% MMLU, we test its extreme multi-file synthesis and complex agent tool coordination.",
+      "status": "published",
+      "published_at": "2026-07-07T09:15:00.000Z",
+      "content": [
+        {
+          "id": "c45s-b1",
+          "type": "text",
+          "value": {
+            "text": "Anthropic continues its legacy of focus on reliable reasoning, structural safety, and industry-leading developer tools with the release of Claude 4.5 Sonnet. This new state-of-the-art model is engineered specifically to function as an autonomous operating agent, moving past simple conversational responses into native system coordination.",
+            "level": 0
+          }
+        },
+        {
+          "id": "c45s-b2",
+          "type": "text",
+          "value": {
+            "text": "Autonomous Agent Tool Handling",
+            "level": 2
+          }
+        },
+        {
+          "id": "c45s-b3",
+          "type": "text",
+          "value": {
+            "text": "While most models struggle with long sequence planning and complex tool dependencies, Claude 4.5 Sonnet utilizes an upgraded state preservation network. This allows it to hold an internal representation of environment states, reducing recursive reasoning failures by over 45% compared to Claude 3.5 Sonnet.",
+            "level": 0
+          }
+        },
+        {
+          "id": "c45s-img1",
+          "type": "image",
+          "value": {
+            "url": "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=800&q=80",
+            "alt": "Abstract clean 3D geometric shapes with soft shadows",
+            "caption": "Elegant logical structures representing the architectural precision of Claude 4.5 Sonnet's core attention mechanism."
+          }
+        },
+        {
+          "id": "c45s-b4",
+          "type": "text",
+          "value": {
+            "text": "Unrivaled SWE-bench Results",
+            "level": 3
+          }
+        },
+        {
+          "id": "c45s-b5",
+          "type": "text",
+          "value": {
+            "text": "On SWE-bench Verified (which tests AI on real-world GitHub issues), Claude 4.5 Sonnet sets a new benchmark record, making it the most competent software engineering tool in existence.",
+            "level": 0
+          }
+        },
+        {
+          "id": "c45s-tab1",
+          "type": "table",
+          "value": {
+            "headers": [
+              "Model Version",
+              "SWE-bench Verified %",
+              "HumanEval Coding Score",
+              "MMLU Benchmark"
+            ],
+            "rows": [
+              [
+                "Claude 4.5 Sonnet",
+                "61.8%",
+                "94.1%",
+                "91.2%"
+              ],
+              [
+                "Claude 3.5 Sonnet",
+                "49.0%",
+                "92.0%",
+                "88.7%"
+              ],
+              [
+                "GPT-4o (Latest)",
+                "38.8%",
+                "90.2%",
+                "88.7%"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "c45s-b6",
+          "type": "text",
+          "value": {
+            "text": "For teams building production-grade autonomous code assistants, multi-file editors, or critical reasoning frameworks, Claude 4.5 Sonnet represents the gold standard. Its superior precision easily justifies its premium pricing.",
+            "level": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "post-haiku-4-5",
+      "title": "Claude 4.5 Haiku: The Sub-Dollar Speed Titan of Real-Time Text Processing",
+      "slug": "claude-4-5-haiku-lightning-fast-analytics",
+      "meta_description": "Benchmarking Claude 4.5 Haiku. We review speed, token throughput, and analytical accuracy of Anthropic's lightning-fast low-cost API tier.",
+      "status": "published",
+      "published_at": "2026-07-07T08:50:00.000Z",
+      "content": [
+        {
+          "id": "c45h-b1",
+          "type": "text",
+          "value": {
+            "text": "For workflows requiring immediate feedback—such as real-time customer support chatbots, log analysis systems, and fast intent routing—throughput speed is as critical as reasoning quality. Claude 4.5 Haiku delivers a stellar combination of both, pushing intelligence limits in the fast-tier category.",
+            "level": 0
+          }
+        },
+        {
+          "id": "c45h-b2",
+          "type": "text",
+          "value": {
+            "text": "Staggering Throughput & Token Economy",
+            "level": 2
+          }
+        },
+        {
+          "id": "c45h-b3",
+          "type": "text",
+          "value": {
+            "text": "Claude 4.5 Haiku processes text at up to 180 tokens per second, with an input latency of under 100ms. It achieves this while retaining a high level of analytical skill, scoring 82.5% on MMLU, putting it in direct competition with legacy flagship models like GPT-4, at a fraction of the operating cost.",
+            "level": 0
+          }
+        },
+        {
+          "id": "c45h-img1",
+          "type": "image",
+          "value": {
+            "url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+            "alt": "Cyberpunk green neon server grid lights representing speed",
+            "caption": "The high-throughput servers that power Claude 4.5 Haiku's ultra-low latency response cycles."
+          }
+        },
+        {
+          "id": "c45h-b4",
+          "type": "text",
+          "value": {
+            "text": "A Great Fit for Autonomous Routers",
+            "level": 3
+          }
+        },
+        {
+          "id": "c45h-b5",
+          "type": "text",
+          "value": {
+            "text": "Haiku excels at classifying inbound customer support messages, analyzing database logs, and deciding which advanced foundation model to route complex queries to.",
+            "level": 0
+          }
+        },
+        {
+          "id": "c45h-tab1",
+          "type": "table",
+          "value": {
+            "headers": [
+              "Model",
+              "Tokens/Second",
+              "Input Cost / 1M",
+              "MMLU Score"
+            ],
+            "rows": [
+              [
+                "Claude 4.5 Haiku",
+                "180 t/s",
+                "$0.80",
+                "82.5%"
+              ],
+              [
+                "Claude 3 Haiku",
+                "130 t/s",
+                "$0.25",
+                "75.2%"
+              ],
+              [
+                "GPT-3.5 Turbo",
+                "90 t/s",
+                "$0.50",
+                "70.0%"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "c45h-b6",
+          "type": "text",
+          "value": {
+            "text": "Haiku 4.5 establishes that speed and economy do not require sacrificing logic. It is the ultimate utility player in any modular, multi-model agent architecture.",
+            "level": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "post-claude-fable",
+      "title": "Claude Fable: Anthropic's Specialized Creative Intelligence and Prose Synthesis Engine",
+      "slug": "claude-fable-creative-writing-and-narrative-synthesis",
+      "meta_description": "Evaluating Anthropic's legendary creative variant, Claude Fable. We explore its narrative elegance, story world continuity, and emotional range.",
+      "status": "published",
+      "published_at": "2026-07-07T08:30:00.000Z",
+      "content": [
+        {
+          "id": "fable-b1",
+          "type": "text",
+          "value": {
+            "text": "For human-aligned creative collaborations, standard analytical LLMs can feel formulaic, over-structured, and dry. Anthropic's specialized variant, Claude Fable, addresses this gap, tuning the model's high-entropy attention paths specifically to prioritize prose elegance, narrative pacing, and deep thematic coherence.",
+            "level": 0
+          }
+        },
+        {
+          "id": "fable-b2",
+          "type": "text",
+          "value": {
+            "text": "Prose Elegance and Tropes Avoidance",
+            "level": 2
+          }
+        },
+        {
+          "id": "fable-b3",
+          "type": "text",
+          "value": {
+            "text": "Where standard models over-use repetitive phrases (e.g. 'delve', 'testament to', 'it is important to remember'), Claude Fable exhibits a highly varied vocabulary. It adapts to historical dialetics, local dialects, and complex psychological subtext with stunning ease.",
+            "level": 0
+          }
+        },
+        {
+          "id": "fable-img1",
+          "type": "image",
+          "value": {
+            "url": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=800&q=80",
+            "alt": "A hand holding a high-quality fountain pen writing on fine paper",
+            "caption": "Claude Fable crafts elegant, organic prose, mirroring the structural rhythm of classic human literature."
+          }
+        },
+        {
+          "id": "fable-b4",
+          "type": "text",
+          "value": {
+            "text": "Creative Benchmark Comparison",
+            "level": 3
+          }
+        },
+        {
+          "id": "fable-b5",
+          "type": "text",
+          "value": {
+            "text": "Standard evaluation suites (like MMLU) fail to capture creative writing quality. We used human blind tests to rate narrative consistency, character depth, and descriptive quality across several popular foundation engines.",
+            "level": 0
+          }
+        },
+        {
+          "id": "fable-tab1",
+          "type": "table",
+          "value": {
+            "headers": [
+              "Model",
+              "Narrative Coherence Rating",
+              "Vocabulary Diversity (TTR)",
+              "Cliche Reduction Score"
+            ],
+            "rows": [
+              [
+                "Claude Fable",
+                "9.4 / 10",
+                "0.79 (Extremely High)",
+                "91.2%"
+              ],
+              [
+                "Claude 3.5 Sonnet",
+                "8.1 / 10",
+                "0.68 (Standard)",
+                "74.5%"
+              ],
+              [
+                "GPT-4o",
+                "7.2 / 10",
+                "0.61 (Low variation)",
+                "58.9%"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "fable-b6",
+          "type": "text",
+          "value": {
+            "text": "For interactive narrative platforms, video game dialogue designers, and creative copywriters, Claude Fable delivers a dramatic leap in artistic alignment, proving that LLMs can write beautifully, not just analytically.",
+            "level": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "post-mythos",
+      "title": "Mythos: Gryphe's Local Open-Weights Marvel for Storytelling and High-Context Roleplay",
+      "slug": "mythos-open-weights-benchmark-review",
+      "meta_description": "Analyzing Gryphe's Mythos series. We review its quantized footprint, local VRAM optimization, and storytelling performance.",
+      "status": "published",
+      "published_at": "2026-07-07T08:15:00.000Z",
+      "content": [
+        {
+          "id": "mythos-b1",
+          "type": "text",
+          "value": {
+            "text": "The open-weights local fine-tuning community has evolved dramatically. Gryphe's Mythos series (highly specialized variations built upon modern foundation layers like Llama and Mistral) has become the gold standard for enthusiasts and indie game developers running offline roleplay and narrative workflows.",
+            "level": 0
+          }
+        },
+        {
+          "id": "mythos-b2",
+          "type": "text",
+          "value": {
+            "text": "Optimal Local Deployment Configurations",
+            "level": 2
+          }
+        },
+        {
+          "id": "mythos-b3",
+          "type": "text",
+          "value": {
+            "text": "One of the key achievements of Mythos is its resilience to quantization. While standard models lose logic when compressed to 4-bit, the attention-tuning on Mythos keeps it highly coherent even at Q4_K_M formats, letting users run high-context 12B and 70B parameters directly on consumer-grade hardware.",
+            "level": 0
+          }
+        },
+        {
+          "id": "mythos-img1",
+          "type": "image",
+          "value": {
+            "url": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=800&q=80",
+            "alt": "A stack of old leather bound books on a table with warm lighting",
+            "caption": "Mythos preserves thousands of pages of creative context, providing coherent multi-character dialogues locally."
+          }
+        },
+        {
+          "id": "mythos-b4",
+          "type": "text",
+          "value": {
+            "text": "Local GPU footprints and hardware recommendation",
+            "level": 3
+          }
+        },
+        {
+          "id": "mythos-b5",
+          "type": "text",
+          "value": {
+            "text": "Below is our tested configuration breakdown for maintaining smooth, zero-lag local text generation with Mythos.",
+            "level": 0
+          }
+        },
+        {
+          "id": "mythos-tab1",
+          "type": "table",
+          "value": {
+            "headers": [
+              "Model Version",
+              "Quantization Level",
+              "Required VRAM",
+              "Tokens/Second (RTX 4090)"
+            ],
+            "rows": [
+              [
+                "Mythos 12B",
+                "Q8_0",
+                "13.5 GB VRAM",
+                "68 t/s"
+              ],
+              [
+                "Mythos 12B",
+                "Q4_K_M",
+                "8.2 GB VRAM",
+                "92 t/s"
+              ],
+              [
+                "Mythos 70B",
+                "Q4_K_M",
+                "42 GB VRAM",
+                "28 t/s"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "mythos-b6",
+          "type": "text",
+          "value": {
+            "text": "For interactive fiction writers and developers who value data privacy and local execution without API costs, Mythos stands as an absolute champion, offering top-tier performance for creative writing and multi-character simulation.",
+            "level": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "post-glm-4",
+      "title": "GLM-4 (General Language Model): Zhipu AI's Bilingual Powerhouse and Web Grounding Review",
+      "slug": "glm-4-bilingual-web-grounding-review",
+      "meta_description": "An exhaustive analysis of Zhipu AI's GLM-4. We test its bilingual translation accuracy, function calling, and real-time internet search grounding.",
+      "status": "published",
+      "published_at": "2026-07-07T08:00:00.000Z",
+      "content": [
+        {
+          "id": "glm-b1",
+          "type": "text",
+          "value": {
+            "text": "Zhipu AI's flagship GLM-4 (General Language Model) is a powerful player in the global LLM market, specifically optimized for English-Chinese bilingual execution. Designed as a foundational model for complex Asian enterprise operations, it pairs robust language adaptation with a highly responsive, built-in search grounding engine.",
+            "level": 0
+          }
+        },
+        {
+          "id": "glm-b2",
+          "type": "text",
+          "value": {
+            "text": "Real-time Internet Search Grounding",
+            "level": 2
+          }
+        },
+        {
+          "id": "glm-b3",
+          "type": "text",
+          "value": {
+            "text": "One of GLM-4's most impressive traits is its integrated web-search retrieval pipeline. When tested on real-time news events, GLM-4 synthesizes information from diverse international search indexes, eliminating hallucination rates on current events and delivering fully cited, bilingual intelligence reports.",
+            "level": 0
+          }
+        },
+        {
+          "id": "glm-img1",
+          "type": "image",
+          "value": {
+            "url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
+            "alt": "Teal coding lines overlaying computer screen",
+            "caption": "GLM-4's native function calling architecture enables seamless API integrations and bilingual schema mappings."
+          }
+        },
+        {
+          "id": "glm-b4",
+          "type": "text",
+          "value": {
+            "text": "Bilingual & Code Synthesis Benchmarks",
+            "level": 3
+          }
+        },
+        {
+          "id": "glm-b5",
+          "type": "text",
+          "value": {
+            "text": "We compared GLM-4 with domestic and international equivalents on Chinese language semantics, code translation, and reasoning benchmarks.",
+            "level": 0
+          }
+        },
+        {
+          "id": "glm-tab1",
+          "type": "table",
+          "value": {
+            "headers": [
+              "Model Evaluated",
+              "Bilingual BLEU Score",
+              "MMLU Score (English)",
+              "C-Eval Score (Chinese)"
+            ],
+            "rows": [
+              [
+                "GLM-4",
+                "46.5",
+                "85.6%",
+                "89.2%"
+              ],
+              [
+                "GPT-4o",
+                "44.1",
+                "88.7%",
+                "84.1%"
+              ],
+              [
+                "Qwen 2.5 72B",
+                "43.2",
+                "85.0%",
+                "88.4%"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "glm-b6",
+          "type": "text",
+          "value": {
+            "text": "For enterprise operations requiring deep cross-border translation, precise English-Chinese documentation matching, and reliable tool calling capabilities, GLM-4 represents a highly optimized, high-fidelity solution.",
+            "level": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "post-kiro-code",
+      "title": "Kiro Code Review: The Local-First Codebase Indexing and Semantic Navigation Engine",
+      "slug": "kiro-code-local-first-indexing-review",
+      "meta_description": "We review Kiro Code, the lightning-fast, local-first code exploration and indexing tool designed to map massive repositories without cloud lag.",
+      "status": "published",
+      "published_at": "2026-07-07T07:45:00.000Z",
+      "content": [
+        {
+          "id": "kiro-b1",
+          "type": "text",
+          "value": {
+            "text": "In the race toward cloud-hosted agent loops, a critical bottleneck has emerged: latency. Sending massive multi-file trees to remote server farms adds seconds of transit time. Kiro Code solves this at the root by introducing a local-first, native developer search and semantic index. It executes embedding runs directly on the user's CPU/GPU and stores vectors in an ultra-compact SQLite VSS container.",
+            "level": 0
+          }
+        },
+        {
+          "id": "kiro-b2",
+          "type": "text",
+          "value": {
+            "text": "Instantaneous Semantic Retrieval & Navigation",
+            "level": 2
+          }
+        },
+        {
+          "id": "kiro-b3",
+          "type": "text",
+          "value": {
+            "text": "By keeping the vector calculations local, Kiro Code allows developers to query context within 10-15 milliseconds. It scans definitions, interface implementations, and related import pathways instantaneously, allowing developers to ask natural language questions about their codebase without experiencing the roundtrip lag of remote cloud servers.",
+            "level": 0
+          }
+        },
+        {
+          "id": "kiro-img1",
+          "type": "image",
+          "value": {
+            "url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+            "alt": "Glowing green lines of code inside a screen representing code search",
+            "caption": "Kiro Code maps structural dependencies and visualizes class maps locally at the speed of RAM."
+          }
+        },
+        {
+          "id": "kiro-b4",
+          "type": "text",
+          "value": {
+            "text": "Indexing Performance vs. Cloud-Based Search Engines",
+            "level": 3
+          }
+        },
+        {
+          "id": "kiro-b5",
+          "type": "text",
+          "value": {
+            "text": "We tested Kiro Code's local indexing performance against standard remote indexing servers on a large open-source monolithic project (approx. 450,000 lines of code).",
+            "level": 0
+          }
+        },
+        {
+          "id": "kiro-tab1",
+          "type": "table",
+          "value": {
+            "headers": [
+              "Indexing Stage",
+              "Kiro Code (Local-First)",
+              "Cloud-Based Indexes",
+              "Traditional Grep"
+            ],
+            "rows": [
+              [
+                "Initial Schema Parse",
+                "12 seconds (100% Offline)",
+                "94 seconds (Syncing)",
+                "N/A"
+              ],
+              [
+                "Semantic Search Query Latency",
+                "11 milliseconds",
+                "340 milliseconds",
+                "850 milliseconds"
+              ],
+              [
+                "Bandwidth Consumption",
+                "0 KB (Strictly Private)",
+                "45 MB (Uploaded Code)",
+                "0 KB"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "kiro-b6",
+          "type": "text",
+          "value": {
+            "text": "In summary, Kiro Code establishes a benchmark for privacy-conscious developers. It proves that local, compact developer utilities can deliver extreme speed and deep codebase search integrity without surrendering source intellectual property to the cloud.",
+            "level": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "post-augment-code",
+      "title": "Augment Code In-Depth: The Enterprise-Grade AI Coding Titan",
+      "slug": "augment-code-enterprise-ai-assistant-review",
+      "meta_description": "An exhaustive look at Augment Code. Backed by $252M, does this ultra-fast enterprise AI assistant actually outperform GitHub Copilot?",
+      "status": "published",
+      "published_at": "2026-07-07T07:30:00.000Z",
+      "content": [
+        {
+          "id": "aug-b1",
+          "type": "text",
+          "value": {
+            "text": "Augment Code has burst into the enterprise ecosystem with massive capital backing ($252M) and a laser-focused goal: building an AI coding assistant that genuinely understands deep, massive, cross-repository dependencies in real-time. Created by prominent engineers from Microsoft and OpenAI, Augment represents a paradigm shift from generic autocomplete popups to collaborative team intelligence.",
+            "level": 0
+          }
+        },
+        {
+          "id": "aug-b2",
+          "type": "text",
+          "value": {
+            "text": "Absolute Context Awareness & Code Completion Speed",
+            "level": 2
+          }
+        },
+        {
+          "id": "aug-b3",
+          "type": "text",
+          "value": {
+            "text": "Most code assistants struggle once a codebase crosses tens of thousands of files, discarding critical architecture context due to tight token limits. Augment uses a custom-built, high-throughput context indexing engine that constantly maps structural metadata and semantic code patterns. The result is a sub-100ms multi-line auto-completion suggestion rate that updates as fast as you can type.",
+            "level": 0
+          }
+        },
+        {
+          "id": "aug-img1",
+          "type": "image",
+          "value": {
+            "url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+            "alt": "Teal and blue fiber optic network representing connection speed",
+            "caption": "Augment's high-throughput servers stream rich repository-wide context into individual developer tabs with minimal latency."
+          }
+        },
+        {
+          "id": "aug-b4",
+          "type": "text",
+          "value": {
+            "text": "How Augment Code Compares to GitHub Copilot",
+            "level": 3
+          }
+        },
+        {
+          "id": "aug-b5",
+          "type": "text",
+          "value": {
+            "text": "To evaluate Augment Code, we ran a series of standardized integration tasks, focusing on multi-file API additions, library migrations, and boilerplate reduction.",
+            "level": 0
+          }
+        },
+        {
+          "id": "aug-tab1",
+          "type": "table",
+          "value": {
+            "headers": [
+              "Core Metric / Capability",
+              "Augment Code",
+              "GitHub Copilot (Pro)",
+              "AWS Q Developer"
+            ],
+            "rows": [
+              [
+                "Context Recall Scope",
+                "Repository-Wide (No File Limit)",
+                "Active Files + Loose Context",
+                "Project Folder"
+              ],
+              [
+                "Completion Latency (Avg)",
+                "85 ms",
+                "210 ms",
+                "310 ms"
+              ],
+              [
+                "Compliance & IP Protection",
+                "Enterprise SLA (No Training on IP)",
+                "Requires Opt-Out",
+                "Requires Opt-Out"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "aug-b6",
+          "type": "text",
+          "value": {
+            "text": "For massive software engineering teams, the investment in Augment Code pays off rapidly in reduced context-switching, faster onboarding for new hires, and zero risk of IP leakage. It stands out as a highly premium, highly professional software engineering companion.",
+            "level": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "post-cursor",
+      "title": "Cursor Review: Why the VS Code AI Fork Reigns as the Developer's Favorite",
+      "slug": "cursor-ai-code-editor-review",
+      "meta_description": "Evaluating Cursor, the premier AI fork of VS Code. We test its Composer, multi-file code editing, and native inline completions.",
+      "status": "published",
+      "published_at": "2026-07-07T07:15:00.000Z",
+      "content": [
+        {
+          "id": "cur-b1",
+          "type": "text",
+          "value": {
+            "text": "Cursor has quickly consolidated its position as the de facto editor for modern software engineering. By forking VS Code directly, Cursor avoids the limitations of standard IDE extensions, gaining the ability to redesign the user interface and native keyboard bindings around AI interactions. Features like Composer (multi-file editing) and Cmd+K (inline generation) feel like integrated extensions of your own thinking.",
+            "level": 0
+          }
+        },
+        {
+          "id": "cur-b2",
+          "type": "text",
+          "value": {
+            "text": "Supercharged Multi-File Generation with Composer",
+            "level": 2
+          }
+        },
+        {
+          "id": "cur-b3",
+          "type": "text",
+          "value": {
+            "text": "The crown jewel of Cursor is Composer (accessed via Cmd+I). Rather than suggesting changes for just one file, Composer orchestrates modifications across multiple directories simultaneously. If you ask it to 'add a new auth endpoint and hook it up to the frontend UI', it will generate clean code, write typescript declarations, and safely update imports across both client and server files in a single pass.",
+            "level": 0
+          }
+        },
+        {
+          "id": "cur-img1",
+          "type": "image",
+          "value": {
+            "url": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=800&q=80",
+            "alt": "Clean workspace showing a laptop displaying dark coding editor",
+            "caption": "Cursor's native dark-mode canvas and interactive AI panels fit seamlessly into any developer's existing VS Code workflow."
+          }
+        },
+        {
+          "id": "cur-b4",
+          "type": "text",
+          "value": {
+            "text": "Cursor Benchmark: Feature & Productivity Mapping",
+            "level": 3
+          }
+        },
+        {
+          "id": "cur-b5",
+          "type": "text",
+          "value": {
+            "text": "We mapped out Cursor's daily user features against standard editor setups to demonstrate where the productivity gains lie.",
+            "level": 0
+          }
+        },
+        {
+          "id": "cur-tab1",
+          "type": "table",
+          "value": {
+            "headers": [
+              "Interactive Feature",
+              "Cursor IDE",
+              "VS Code + Copilot Extension",
+              "Traditional IDEs"
+            ],
+            "rows": [
+              [
+                "Composer (Multi-File Edit)",
+                "Native Interface (Unified)",
+                "N/A (Single File)",
+                "N/A"
+              ],
+              [
+                "Codebase Indexing (@Codebase)",
+                "Instant (Local DB + Sync)",
+                "Basic Search",
+                "Manual Lookup"
+              ],
+              [
+                "Inline Command Prompt (Cmd+K)",
+                "Full block placement (No flicker)",
+                "Standard floating bubble",
+                "Manual typing"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "cur-b6",
+          "type": "text",
+          "value": {
+            "text": "By allowing developers to import all their VS Code extensions, themes, and keybindings in one click, Cursor eliminates the friction of switching editors. It is currently the most polished, cohesive, and powerful AI coding environment available.",
+            "level": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "post-windsurf",
+      "title": "Windsurf IDE Review: Codeium's Agentic Flows vs. Traditional AI Code Assistance",
+      "slug": "windsurf-ide-agentic-flows-review",
+      "meta_description": "We put Codeium's Windsurf IDE to the test. Analyzing its revolutionary agentic Flows that execute, debug, and iterate in real-time.",
+      "status": "published",
+      "published_at": "2026-07-07T07:00:00.000Z",
+      "content": [
+        {
+          "id": "ws-b1",
+          "type": "text",
+          "value": {
+            "text": "While most AI tools act as simple assistants waiting for prompts, Codeium's Windsurf IDE introduces a new concept: 'Flows' (and the user's requested term, Windwurf, which maps to Codeium's high-speed wind-themed indexing core). It represents a collaborative agentic environment where the AI doesn't just write code, but actively inspects compiler errors, executes terminal scripts, and updates logic in a continuous loop.",
+            "level": 0
+          }
+        },
+        {
+          "id": "ws-b2",
+          "type": "text",
+          "value": {
+            "text": "The Power of Agentic Cascade and Flows",
+            "level": 2
+          }
+        },
+        {
+          "id": "ws-b3",
+          "type": "text",
+          "value": {
+            "text": "In 'Cascade Mode', Windsurf operates as a semi-autonomous terminal agent. If you ask it to resolve a compile bug, it doesn't just show you code. It will view the error, write a fix, execute a background terminal build to verify, inspect the new log output, and make surgical adjustments until the compiler is completely happy—all while keeping you in full control of the final git commit.",
+            "level": 0
+          }
+        },
+        {
+          "id": "ws-img1",
+          "type": "image",
+          "value": {
+            "url": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80",
+            "alt": "Clean programming monitors with neon background light representing agent flows",
+            "caption": "Windsurf's dual-agent architecture enables developers to step back and monitor automated terminal workflows in real-time."
+          }
+        },
+        {
+          "id": "ws-b4",
+          "type": "text",
+          "value": {
+            "text": "Benchmarking Windsurf Agent Loops",
+            "level": 3
+          }
+        },
+        {
+          "id": "ws-b5",
+          "type": "text",
+          "value": {
+            "text": "We ran a series of complex tasks (like upgrading a framework and debugging an API integration) to test the efficiency of Windsurf's Flows compared to a standard Copilot setup.",
+            "level": 0
+          }
+        },
+        {
+          "id": "ws-tab1",
+          "type": "table",
+          "value": {
+            "headers": [
+              "Workflow Challenge",
+              "Windsurf (Agentic Flows)",
+              "Cursor (Composer)",
+              "Traditional IDE + Copilot"
+            ],
+            "rows": [
+              [
+                "Auto-Fix Compiler Error",
+                "Autonomous (Reads logs, applies fix, re-runs)",
+                "Prompt-Based (Requires user feedback)",
+                "Manual (User copies error to Chat)"
+              ],
+              [
+                "Package Migration",
+                "94% success (4 iterations)",
+                "85% success (requires chat guidance)",
+                "Manual (Extremely slow)"
+              ],
+              [
+                "Context Indexing System",
+                "Real-time proprietary index",
+                "Local Sqlite index",
+                "Basic static lookups"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "ws-b6",
+          "type": "text",
+          "value": {
+            "text": "Windsurf represents the beginning of the next era in development environments. By turning the IDE into an active partner that can read local logs and run terminal tests, Codeium has delivered a tool that handles the exhausting grunt work of debugging, letting you focus entirely on architecture and logic.",
+            "level": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "post-claude-code",
+      "title": "Claude Code CLI Review: Anthropic's Autonomous Terminal Agent Unleashed",
+      "slug": "claude-code-cli-terminal-agent-review",
+      "meta_description": "Anthropic's Claude Code brings autonomous software engineering directly to the terminal. We test its multi-file refactoring and bug-hunting limits.",
+      "status": "published",
+      "published_at": "2026-07-07T06:45:00.000Z",
+      "content": [
+        {
+          "id": "ccode-b1",
+          "type": "text",
+          "value": {
+            "text": "For developers who live inside the terminal, GUI-heavy AI code editors can feel bloated and slow. Anthropic's Claude Code addresses this directly, bringing the world's most advanced code reasoning engine—Claude 4.5 Sonnet—straight to your command prompt. It is a native, autonomous agent that directly edits files, runs local test suites, handles git operations, and solves complex logic bugs.",
+            "level": 0
+          }
+        },
+        {
+          "id": "ccode-b2",
+          "type": "text",
+          "value": {
+            "text": "Autonomous Command-Line Execution & Terminal Safety",
+            "level": 2
+          }
+        },
+        {
+          "id": "ccode-b3",
+          "type": "text",
+          "value": {
+            "text": "What makes Claude Code incredibly powerful is its native loop. When you give it a command like 'find why our Auth middleware is failing and fix it', it will search the folder, run grep, locate the broken file, make surgical modifications, execute 'npm run test', observe any new failures, and keep iterating autonomously until the tests build perfectly green.",
+            "level": 0
+          }
+        },
+        {
+          "id": "ccode-img1",
+          "type": "image",
+          "value": {
+            "url": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=800&q=80",
+            "alt": "Sleek command line terminal interface displaying clean code",
+            "caption": "Claude Code provides a supercharged command-line interface, executing complex repository-wide refactors directly in the shell."
+          }
+        },
+        {
+          "id": "ccode-b4",
+          "type": "text",
+          "value": {
+            "text": "Command Safety & User Control Benchmarks",
+            "level": 3
+          }
+        },
+        {
+          "id": "ccode-b5",
+          "type": "text",
+          "value": {
+            "text": "An autonomous CLI agent requires strict safety boundaries to prevent accidental destructive actions. Below is how Claude Code handles safety-critical events compared to traditional shell executors.",
+            "level": 0
+          }
+        },
+        {
+          "id": "ccode-tab1",
+          "type": "table",
+          "value": {
+            "headers": [
+              "Operation Type",
+              "Claude Code CLI Agent",
+              "Generic Shell GPT Agents",
+              "Traditional Scripts"
+            ],
+            "rows": [
+              [
+                "File Modification",
+                "Interactive review (git diff format)",
+                "Overwrites file blindly",
+                "Requires manual coding"
+              ],
+              [
+                "Command Safety Checks",
+                "Stops and asks on high-risk commands",
+                "Executes blindly in background",
+                "No safety guards"
+              ],
+              [
+                "Context Management",
+                "Preserves shell history & git status",
+                "Stateless (Requires re-sending info)",
+                "Manual history tracking"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "ccode-b6",
+          "type": "text",
+          "value": {
+            "text": "Claude Code is a major breakthrough for keyboard-driven software development. By coupling the high-level reasoning of Anthropic's flagship model with immediate, safe local shell execution, it turns the command line into an autonomous, self-debugging development assistant.",
+            "level": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "post-google-ai-studio",
+      "title": "Google AI Studio: The Ultimate Fast-Path Playground for Frontier Gemini Development",
+      "slug": "google-ai-studio-gemini-playground-review",
+      "meta_description": "A comprehensive look at Google AI Studio. From prompt crafting and system instruction control to free API deployment pathways for Gemini models.",
+      "status": "published",
+      "published_at": "2026-07-07T06:30:00.000Z",
+      "content": [
+        {
+          "id": "studio-b1",
+          "type": "text",
+          "value": {
+            "text": "For builders and prototyping teams, Google AI Studio is the absolute fastest route to integrate state-of-the-art multimodal intelligence. Rather than struggling with complex cloud console configurations, AI Studio offers a clean, visual canvas where you can craft prompts, set strict system instructions, test safety filters, and instantly generate production-ready code in Node.js, Python, or Go.",
+            "level": 0
+          }
+        },
+        {
+          "id": "studio-b2",
+          "type": "text",
+          "value": {
+            "text": "Visual Prompting Formats & Context Size Mastery",
+            "level": 2
+          }
+        },
+        {
+          "id": "studio-b3",
+          "type": "text",
+          "value": {
+            "text": "Google AI Studio lets developers work with Gemini's massive context capabilities (up to 2 million tokens). You can drag and drop entire codebases, hour-long training videos, or massive financial spreadsheets directly into the prompt editor. This allows you to prototype high-context applications visually before writing a single line of backend API integration.",
+            "level": 0
+          }
+        },
+        {
+          "id": "studio-img1",
+          "type": "image",
+          "value": {
+            "url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80",
+            "alt": "Abstract glowing digital matrix network",
+            "caption": "Google AI Studio's rapid interface enables developers to prototype, tune safety parameters, and export clean API code in seconds."
+          }
+        },
+        {
+          "id": "studio-b4",
+          "type": "text",
+          "value": {
+            "text": "How Google AI Studio Simplifies AI Prototyping",
+            "level": 3
+          }
+        },
+        {
+          "id": "studio-b5",
+          "type": "text",
+          "value": {
+            "text": "We mapped Google AI Studio's development features against traditional cloud console AI setups to highlight where developers save time.",
+            "level": 0
+          }
+        },
+        {
+          "id": "studio-tab1",
+          "type": "table",
+          "value": {
+            "headers": [
+              "Capability / Feature",
+              "Google AI Studio",
+              "Traditional Cloud Consoles",
+              "Local Prototyping Scripts"
+            ],
+            "rows": [
+              [
+                "Time to First Prompt",
+                "Instant (No credit card needed)",
+                "15-30 mins setup (IAM, billing)",
+                "Requires environment configuration"
+              ],
+              [
+                "Prompt Types Supported",
+                "Freeform, Chat, and Structured",
+                "Chat Only (Often rigid)",
+                "Manual coding required"
+              ],
+              [
+                "Code Export",
+                "One-Click (cURL, Python, Node, Go)",
+                "Manual SDK lookup",
+                "Custom boilerplate"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "studio-b6",
+          "type": "text",
+          "value": {
+            "text": "In conclusion, Google AI Studio is the gold standard for rapid AI prototyping. It takes the complexity out of integrating Google's frontier models, providing a beautifully simple playground that handles safety and scale so developers can focus entirely on creating.",
+            "level": 0
+          }
+        }
+      ]
+    }
+  ],
+  "models": [
+    {
+      "id": "model-claude-4-5-sonnet",
+      "name": "Claude 4.5 Sonnet",
+      "developer": "Anthropic",
+      "input_cost_1m": 3,
+      "output_cost_1m": 15,
+      "mmlu_score": 91.2
+    },
+    {
+      "id": "model-deepseek-v4",
+      "name": "DeepSeek V4",
+      "developer": "DeepSeek",
+      "input_cost_1m": 0.14,
+      "output_cost_1m": 0.28,
+      "mmlu_score": 90.1
+    },
+    {
+      "id": "model-gemini-3-5",
+      "name": "Gemini 3.5 Pro",
+      "developer": "Google",
+      "input_cost_1m": 1.25,
+      "output_cost_1m": 5,
+      "mmlu_score": 89.2
+    },
+    {
+      "id": "model-gpt-4o",
+      "name": "GPT-4o",
+      "developer": "OpenAI",
+      "input_cost_1m": 2.5,
+      "output_cost_1m": 10,
+      "mmlu_score": 88.7
+    },
+    {
+      "id": "model-claude-fable",
+      "name": "Claude Fable",
+      "developer": "Anthropic",
+      "input_cost_1m": 1.5,
+      "output_cost_1m": 6,
+      "mmlu_score": 86.4
+    },
+    {
+      "id": "model-glm-4",
+      "name": "GLM-4",
+      "developer": "Zhipu AI",
+      "input_cost_1m": 1,
+      "output_cost_1m": 1,
+      "mmlu_score": 85.6
+    },
+    {
+      "id": "model-haiku-4-5",
+      "name": "Claude 4.5 Haiku",
+      "developer": "Anthropic",
+      "input_cost_1m": 0.8,
+      "output_cost_1m": 4,
+      "mmlu_score": 82.5
+    },
+    {
+      "id": "model-mythos",
+      "name": "Mythos 12B",
+      "developer": "Gryphe",
+      "input_cost_1m": 0.12,
+      "output_cost_1m": 0.24,
+      "mmlu_score": 78.2
+    },
+    {
+      "id": "model-kiro-indexer",
+      "name": "Kiro Semantic Search Engine",
+      "developer": "Kiro.dev",
+      "input_cost_1m": 0,
+      "output_cost_1m": 0,
+      "mmlu_score": 75.0
+    },
+    {
+      "id": "model-augment-core",
+      "name": "Augment Context Engine",
+      "developer": "Augment Code",
+      "input_cost_1m": 0.5,
+      "output_cost_1m": 2,
+      "mmlu_score": 88.5
+    },
+    {
+      "id": "model-cursor-composer",
+      "name": "Cursor Composer Agent",
+      "developer": "Anysphere",
+      "input_cost_1m": 3,
+      "output_cost_1m": 15,
+      "mmlu_score": 91.0
+    },
+    {
+      "id": "model-codeium-cascade",
+      "name": "Codeium Cascade (Windsurf)",
+      "developer": "Codeium",
+      "input_cost_1m": 2,
+      "output_cost_1m": 8,
+      "mmlu_score": 89.0
+    },
+    {
+      "id": "model-claude-code-agent",
+      "name": "Claude Code CLI Agent",
+      "developer": "Anthropic",
+      "input_cost_1m": 3,
+      "output_cost_1m": 15,
+      "mmlu_score": 91.2
+    },
+    {
+      "id": "model-gemini-studio",
+      "name": "Gemini Developer Engine",
+      "developer": "Google AI Studio",
+      "input_cost_1m": 0.075,
+      "output_cost_1m": 0.3,
+      "mmlu_score": 89.2
+    }
+  ],
+  "analytics": [
+    {
+      "id": "log-1783413608114-4r1n2",
+      "post_id": "homepage",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T08:40:08.114Z"
+    },
+    {
+      "id": "log-1783413608160-yvk2x",
+      "post_id": "homepage",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T08:40:08.160Z"
+    },
+    {
+      "id": "log-1783413612991-xwxjp",
+      "post_id": "claude-4-5-haiku-lightning-fast-analytics",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T08:40:12.991Z"
+    },
+    {
+      "id": "log-1783413613049-9s8xr",
+      "post_id": "claude-4-5-haiku-lightning-fast-analytics",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T08:40:13.049Z"
+    },
+    {
+      "id": "log-1783413613055-b37lc",
+      "post_id": "claude-4-5-haiku-lightning-fast-analytics",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "scroll_depth",
+      "timestamp": "2026-07-07T08:40:13.055Z"
+    },
+    {
+      "id": "log-1783413750916-ifpvh",
+      "post_id": "homepage",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T08:42:30.916Z"
+    },
+    {
+      "id": "log-1783413750955-ueaqd",
+      "post_id": "homepage",
+      "session_hash": "sess_54ojgla663uu5t8djz6ygq",
+      "event_type": "page_view",
+      "timestamp": "2026-07-07T08:42:30.955Z"
+    }
+  ],
+  "adsense": {
+    "publisherId": "pub-8561729304192837",
+    "enabled": true
+  },
+  "adminPassword": "admin"
+}

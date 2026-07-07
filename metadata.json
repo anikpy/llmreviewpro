@@ -1,0 +1,6 @@
+{
+  "name": "LLMReviewPro",
+  "description": "High-performance blog and benchmarking platform for Large Language Models, AI Agents, and AI IDEs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
